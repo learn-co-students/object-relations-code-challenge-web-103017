@@ -1,0 +1,12 @@
+customer = Customer.new("Tashawn", "Williams")
+restaurant = Restaurant.new("Restaurant")
+content = "It was ok"
+review = Review.new(customer, restaurant, content)
+newcontent = "Wack!"
+customer.add_review(restaurant, newcontent)
+newcustomer = Customer.new("Tashawn", "NotWilliams")
+newcustomer.add_review(restaurant, "Wow another bad review")
+newrestaurant = Restaurant.new("NewRestaurant")
+newercustomer = Customer.new("NotTashawn", "Williams")
+newercustomer.add_review(newrestaurant, "only good view of the bunch")
+newreview = Review.new(newercustomer, restaurant, "another good one")
