@@ -16,10 +16,8 @@ class Customer
   end
 
   def self.find_by_name(name)
-    # name_arr = name.split(" ")
     self.all.find do |custObj|
       custObj.full_name == name
-      #custObj.first_name == name_arr[0] && custObj.last_name == name_arr[1]
     end
   end
 
