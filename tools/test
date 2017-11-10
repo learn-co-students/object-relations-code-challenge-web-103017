@@ -1,0 +1,14 @@
+a = Customer.new("a","1")
+b = Customer.new("b","2")
+c = Customer.new("c","3")
+
+punjabi = Restaurant.new("Punjabi Deli")
+superiority = Restaurant.new("Superiority Burger")
+
+
+rev1 = a.add_review(punjabi, "rules")
+rev2 = a.add_review(superiority, "v delish")
+rev3 = b.add_review(punjabi, "tasyt")
+rev4 = b.add_review(superiority, "mad yumz")
+rev5 = c.add_review(punjabi, "vom time")
+rev6 = c.add_review(superiority, "made me want to die")
